@@ -27,5 +27,6 @@ module AskBook
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
+    config.cache_store = :file_store,"tmp/cache"
   end
 end
