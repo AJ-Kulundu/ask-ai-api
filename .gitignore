@@ -34,3 +34,6 @@
 
 #Ignore .env file
 .env
+
+#Ignore other files
+embeddings.csv
