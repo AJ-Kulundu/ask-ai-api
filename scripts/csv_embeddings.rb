@@ -2,9 +2,10 @@ require "csv"
 require "httparty"
 require "json"
 
-require 'dotenv'
-Dotenv.load
-
+if ['development','test'].include? ENV['RAILS_ENV']
+    require 'dotenv'
+    Dotenv.load
+end
 
 def get_tokens(file_path)
   csv_data = []
